@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<!-- CSS only -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link href="./index.css" rel="stylesheet" />
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+
+			#header {
+				background: #fff;
+				/* background-color: #003366; */
+				/* border-bottom: 1px solid #e5e5e5; */
+			}
+
+			nav ul li a:hover {
+				text-decoration: none;
+			}
+
+			.blog-header {
+				/* background-color: #d4af37; */
+				background-color: #003366;
+				line-height: 1;
+				/* border-bottom: 1px solid #e5e5e5; */
+			}
+
+			.divider {
+				border-bottom: 1px solid #e5e5e5;
+			}
+
+			@media (max-width: 768px) {
+				.divider {
+					border: none;
+				}
+			}
+
+			.custom-toggler.navbar-toggler {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+		</style>
+
+		<title>Hello, world!</title>
+	</head>
+
+	<body>
+		<!-- Navbar area -->
+
+		<header id="header">
+			<header-top>
+				<div class="container blog-header">
+					<div class="py-2 row">
+						<div
+							class="col-4 d-flex justify-content-start align-items-center top-text"
+						>
+							<a class="link-secondary text-uppercase" href="#"
+								>Ministry of Finance, Ethiopia</a
+							>
+						</div>
+
+						<div class="col-4 d-flex justify-content-center align-items-center">
+							<ul class="d-flex top-social">
+								<li class="">
+									<a href="#"><i class="px-3 fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="px-3 fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="px-3 fa fa-youtube"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-4 d-flex justify-content-end align-items-center">
+							<div class="btn-group" role="group">
+								<button
+									id="btnGroupDrop1"
+									type="button"
+									class="btn btn-sm btn-outline-warning dropdown-toggle rounded-0 text-uppercase"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									English
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+									<li><a class="dropdown-item" href="#">Amharic</a></li>
+									<li><a class="dropdown-item" href="#">English</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header-top>
+			<nav
+				class="navbar navbar-expand-xl border-3 border-end-1 navbar-light bg-lignt"
+				aria-label="Twelfth navbar example"
+			>
+				<div class="container divider">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarsExample10"
+						aria-controls="navbarsExample10"
+						aria-expanded="true"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="navbar-collapse justify-content-md-between collapse"
+						id="navbarsExample10"
+					>
+						<div class="m-3 logo-mof">
+							<a href="/">
+								<img
+									alt="mof"
+									src="./img/new-logo-mof.png"
+									width="110"
+									height="110"
+								/>
+							</a>
+						</div>
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link h5 mb-0" aria-current="page" href="#"
+									>HOME</a
+								>
+							</li>
+							<li class="nav-item dropdown text-decoration-underline-none">
+								<a
+									class="px-2 mb-0 nav-link dropdown-toggle h5"
+									href="#"
+									id="dropdown01"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>MINISTRY</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown01">
+									<li>
+										<a class="py-2 dropdown-item" href="#">About Us</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item h4" href="#"
+											>Organizational Structure</a
+										>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Directorates</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a
+									class="px-2 mb-0 nav-link dropdown-toggle text-uppercase h5"
+									href="#"
+									id="dropdown02"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>Programmes & Projects</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown02">
+									<li>
+										<a class="py-2 dropdown-item" href="#">CRGE</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">PPP</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">IFMIS</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">FTA</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a
+									class="px-2 mb-0 nav-link dropdown-toggle h5"
+									href="#"
+									id="dropdown06"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>RESOURCES</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown06">
+									<li>
+										<a class="py-2 dropdown-item" href="#">Budget</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Proclamation</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Debt Bulletin</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Directive</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Regulation</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="px-2 mb-0 nav-link dropdown-toggle h5"
+									href="#"
+									id="dropdown07"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>PRESS &amp; MEDIA</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown07">
+									<li>
+										<a class="py-2 dropdown-item" href="#">Press Release</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Speech</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">Feature Article</a>
+									</li>
+									<li>
+										<a class="py-2 dropdown-item" href="#">FQA</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link h5 mb-0" aria-current="page" href="#"
+									>CONTACT</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-flex justify-content-end align-items-center">
+							<div calss="d-flex align-items-center ">
+								<a
+									class="link-secondary py-1 me-1 search_box"
+									href="#"
+									aria-label="Search"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										fill="none"
+										stroke="#719eb3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="mx-2"
+										role="img"
+										viewBox="0 0 24 24"
+									>
+										<title>Search</title>
+										<circle cx="10.5" cy="10.5" r="7.5"></circle>
+										<path d="M21 21l-5.2-5.2"></path>
+									</svg>
+									<span class="me-4 text-uppercase h5 py-0">Search</span>
+								</a>
+							</div>
+
+							<a
+								class="btn btn-sm btn-outline-warning rounded-0 h5 text-uppercase mb-0"
+								href="#"
+								>Sign up</a
+							>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Modal Search -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="">
+						<form>
+							<div class="input-group p-3">
+								<input
+									type="text"
+									class="form-control rounded-0"
+									placeholder="Search"
+									aria-label="Search"
+									aria-describedby="basic-addon2"
+								/>
+								<span
+									class="input-group-text btn-outline-warning rounded-0"
+									id="basic-addon2"
+									>Search</span
+								>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Section -->
+		<section>
+			<div class="container px-0">
+				<div class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="p-3 col-md-10">
+								<ul class="page-header-breadcrumb">
+									<li><a href="index.html">CRGE</a></li>
+									<li>About CRGE</li>
+								</ul>
+								<h1>About CRGE</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="main-post">
+										<p>
+											The Government of the Federal Democratic Republic of
+											Ethiopia launched its Climate Resilient Green Economy
+											(CRGE) strategy in December 2011 in Durban, South Africa
+											during the 17th session of the Conference of the Parties
+											(COP) of the United Nations Framework Convention on
+											Climate Change (UNFCCC).
+										</p>
+										<p>
+											The strategy aims to build carbon neutral and climate
+											resilient middle-income economy by 2025. It also aims to
+											reduce 64% of the national greenhouse gas emission by 2030
+											compared with the ‘business as usual’. Following the
+											strategy, sector specific climate-resilience strategies
+											were developed for agriculture & forestry, water & energy
+											and transport sectors. Based on the existing climate
+											resilience and green-growth strategies, Ethiopia has also
+											submitted its Nationally Determined Contribution (NDC) to
+											UNFCCC. The CRGE strategy elaborates a number of low
+											carbon emitting actions across key economic sectors to
+											achieve its vision.
+										</p>
+										<p>
+											The strategy also tasked the Ministry of Finance and
+											Economic Cooperation (MoFEC) to establish a national
+											climate fund to mobilize climate finance from various
+											sources to realize this vision. Accordingly, MoFEC in
+											collaboration with the Ministry of Environment, Forest and
+											Climate Change (MEFCC) established (late 2012) and
+											operationalized (early 2013) the CRGE Facility to attract
+											climate finance to support the institutional building and
+											implementation of Ethiopia’s CRGE Strategy. The facility
+											is managed under the UN Agencies, CRGE Facility and
+											Regional Economic Cooperation Directorate in MoFEC.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="aside-widget">
+								<div class="section-title">
+									<h2>Menu</h2>
+								</div>
+								<div class="category-widget">
+									<ul>
+										<li>
+											<a href="#programs_projects" class="cat-2"
+												>Programs and Projects</a
+											>
+										</li>
+										<li>
+											<a href="#our_partners" class="cat-2">Our Partners</a>
+										</li>
+										<li>
+											<a href="#our_mission" class="cat-2"
+												>Our Mission Vision & Values</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="programs_projects" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="section-title">
+									<h2>Programs and Projects</h2>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="mb-2 row">
+									<div class="col-md-6">
+										<div
+											class="mb-4 overflow-hidden row g-0 flex-md-row h-md-250 position-relative"
+										>
+											<div class="p-4 col d-flex flex-column position-static">
+												<h3 class="mb-0">Fast Track Investments</h3>
+												<div class="mb-1 text-muted">Nov 12</div>
+												<p class="mb-auto card-text">
+													The Ministry of Finance and Economic Cooperation
+													(MoFEC) and the Ministry of Environment, Forest and
+													Climate Change (MEFCC) in collaboration with
+													development partners have been supporting to ...
+												</p>
+												<a href="#" class="stretched-link">Continue reading</a>
+											</div>
+											<div class="col-auto d-none d-lg-block">
+												<img
+													src="./img/FastTrack.jpg"
+													alt=""
+													class="mx-auto"
+													width="180"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div
+											class="mb-4 overflow-hidden row g-0 flex-md-row h-md-250 position-relative"
+										>
+											<div class="p-4 col d-flex flex-column position-static">
+												<h3 class="mb-0">
+													Institutional Strengthening for the Forest Sector
+													Development in Ethiopia
+												</h3>
+												<div class="mb-1 text-muted">Nov 11</div>
+												<p class="mb-auto">
+													This is a wider card with supporting text below as a
+													natural lead-in to additional content.
+												</p>
+												<a href="#" class="stretched-link">Continue reading</a>
+											</div>
+											<div class="col-auto d-none d-lg-block">
+												<img
+													src="./img/a4-img.svg"
+													alt=""
+													class="mx-auto"
+													width="180"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-2 row">
+									<div class="col-md-6">
+										<div
+											class="mb-4 overflow-hidden row g-0 flex-md-row h-md-250 position-relative"
+										>
+											<div class="p-4 col d-flex flex-column position-static">
+												<h3 class="mb-0">
+													Greening Agricultural Transformation in Ethiopia
+												</h3>
+												<div class="mb-1 text-muted">Nov 12</div>
+												<p class="mb-auto card-text">
+													The Ministry of Finance and Economic Cooperation
+													(MoFEC) and the Ministry of Environment, Forest and
+													Climate Change (MEFCC) in collaboration with
+													development partners have been supporting to ...
+												</p>
+												<a href="#" class="stretched-link">Continue reading</a>
+											</div>
+											<div class="col-auto d-none d-lg-block">
+												<img
+													src="./img/development_2016_17.jpg"
+													alt=""
+													class="mx-auto"
+													width="180"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div
+											class="mb-4 overflow-hidden row g-0 flex-md-row h-md-250 position-relative"
+										>
+											<div class="p-4 col d-flex flex-column position-static">
+												<h3 class="mb-0">
+													Multi-Sector Investment Plan (MSIP)
+												</h3>
+												<div class="mb-1 text-muted">Nov 11</div>
+												<p class="mb-auto">
+													This document is being made publicly available prior
+													to approval. This does not imply a presumed outcome.
+												</p>
+												<a href="#" class="stretched-link">Continue reading</a>
+											</div>
+											<div class="col-auto d-none d-lg-block">
+												<img
+													src="./img/CRGE-Facility.jpg"
+													alt=""
+													class="mx-auto"
+													width="180"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="section-row">
+									<button class="primary-button center-block">Load More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="our_partners" class="pb-5 section">
+			<div class="container">
+				<!-- Three columns of text below the carousel -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="text-center section-title">
+							<h2>Our Partners</h2>
+						</div>
+					</div>
+					<div class="col-lg-2 d-flex flex-column">
+						<div class="my-3 text-center">
+							<a class="p-3" href="#"
+								><img src="./img/AF-Logo-Web-RGB.jpg" width="130" alt="value"
+							/></a>
+						</div>
+					</div>
+					<div class="pt-3 col-lg-2 d-flex flex-column">
+						<div class="text-center">
+							<a href="#"
+								><img
+									src="./img/GreenClimateFund.svg"
+									height="70"
+									alt="misssion"
+							/></a>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-2 d-flex flex-column">
+						<div class="pt-2">
+							<a class="text-center" href="#"
+								><img src="./img/TheWorldBank.jpg" height="90" alt="vison"
+							/></a>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-2 d-flex flex-column">
+						<div>
+							<a class="text-center" href="#"
+								><img src="./img/UNECA.png" height="90" alt="value"
+							/></a>
+						</div>
+					</div>
+					<div class="col-lg-2 d-flex flex-column">
+						<div class="my-3 text-center">
+							<a class="" href="#"
+								><img src="./img/DfIDUK.png" height="70" alt="value"
+							/></a>
+						</div>
+					</div>
+					<div class="col-lg-2 d-flex flex-column">
+						<div class="my-3 text-center">
+							<a class="p-3" href="#"
+								><img src="./img/UNDP.png" height="70" alt="value"
+							/></a>
+						</div>
+					</div>
+
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- /.row -->
+			</div>
+		</div>
+
+		<div id="our_mission" class="pb-5 section section-grey">
+			<div class="container">
+				<!-- Three columns of text below the carousel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-center section-title">
+							<h2>Our Mission Vision & Values</h2>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex flex-column" style="height: 285px">
+						<div class="my-3 text-center">
+							<a href="#"
+								><img src="./img/mission.svg" height="60" alt="misssion"
+							/></a>
+						</div>
+
+						<h3 class="text-center">Mission</h3>
+						<p class="text-center">
+							Through the development of partnerships with development partners
+							and private sector, and through enhancing domestic investments
+							from government, the CRGE Facility’s mission is to:
+						</p>
+						<p class="mt-auto text-center">
+							<a class="button primary-button" href="#" role="button"
+								>View details »</a
+							>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4 d-flex flex-column" style="height: 285px">
+						<div class="my-3 text-center">
+							<a class="p-3" href="#"
+								><img src="./img/vision.svg" height="60" alt="vison"
+							/></a>
+						</div>
+
+						<h3 class="text-center">Vision</h3>
+						<p class="text-center">
+							As Ethiopia’s national climate fund, the CRGE Facility will be
+							recognized nationally and internationally as a premiere climate
+							finance and CRGE coordination and delivery entity.
+						</p>
+						<p class="mt-auto text-center">
+							<a class="button primary-button" href="#" role="button"
+								>View details »</a
+							>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4 d-flex flex-column" style="height: 285px">
+						<div class="my-3 text-center">
+							<a class="p-3" href="#"
+								><img src="./img/value.svg" height="60" alt="value"
+							/></a>
+						</div>
+						<h3 class="text-center">Values</h3>
+						<p class="text-center">
+							As Ethiopia’s national climate fund, the CRGE Facility will be
+							recognized nationally and internationally as a premiere climate
+							finance and CRGE coordination and delivery entity.
+						</p>
+						<p class="mt-auto text-center">
+							<a class="button primary-button" href="#" role="button"
+								>View details »</a
+							>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- /.row -->
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footer-widget">
+									<div class="footer-logo">
+										<a href="index.html" class="logo"
+											><img
+												class="p-lg-3"
+												src="./img/mof-text-logo.svg"
+												width="180"
+												alt="logo"
+										/></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="footer-widget">
+									<h3 class="footer-title text-uppercase">MINISTRY</h3>
+									<ul class="footer-links">
+										<li>
+											<a href="#" class="text-uppercase">About Us</a>
+										</li>
+										<li><a href="#" class="text-uppercase">SERVICES</a></li>
+
+										<li>
+											<a href="#" class="text-uppercase">PARTNERS</a>
+										</li>
+										<li>
+											<a href="contact.html" class="text-uppercase"
+												>Programmes & Projects</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12">
+						<div class="row">
+							<div class="col-lg-5 col-md-6">
+								<div class="footer-widget">
+									<h3 class="footer-title text-uppercase">Information</h3>
+									<ul class="footer-links">
+										<li><a href="#" class="text-uppercase">Vacancies</a></li>
+										<li>
+											<a href="#" class="text-uppercase">Bid</a>
+										</li>
+										<li><a href="#" class="text-uppercase">Forms</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6">
+								<div class="footer-widget">
+									<h3 class="footer-title text-uppercase">Contact</h3>
+									<ul class="footer-links">
+										<li>
+											<a href="category.html"
+												><i class="fa fa-phone pe-2"></i
+												><span class="text-uppercase"
+													>+ 251 111 552 015</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="category.html"
+												><i class="fa fa-fax pe-2"></i
+												><span class="text-uppercase"
+													>+ 251 111 555 189</span
+												></a
+											>
+										</li>
+
+										<li>
+											<a href="category.html" class="text-uppercase"
+												><i class="fa fa-map-marker pe-2"></i>
+												<span>Addis Ababa, Ethiopia</span>
+											</a>
+										</li>
+										<li>
+											<a href="# "
+												><i class="fa fa-envelope-o pe-2"></i>1037 Or 1905
+												(P.O.Box)</a
+											>
+										</li>
+										<li>
+											<a href="mailto:infopr@mofed.gov.et "
+												><i class="fa fa-envelope pe-2"></i
+												>infopr@mofed.gov.et</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="col-md-12">
+							<div class="footer-widget">
+								<h3 class="footer-title text-uppercase">Join our Newsletter</h3>
+								<div class="footer-newsletter">
+									<form>
+										<input
+											class="input"
+											type="email"
+											name="newsletter"
+											placeholder="Enter your email"
+										/>
+										<button class="newsletter-btn">
+											<i class="fa fa-paper-plane"></i>
+										</button>
+									</form>
+								</div>
+
+								<ul class="footer-social">
+									<li>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="copyright d-flex justify-content-between align-items-center"
+				>
+					<div>
+						<a class="link-secondary" href="#"
+							>Copyright @ 2021 FDRE Ministry of Finance, All Rights Reserved</a
+						>
+					</div>
+					<div class="btn-group" role="group">
+						<button
+							id="btnGroupDrop1"
+							type="button"
+							class="btn btn-sm btn-outline-warning dropdown-toggle rounded-0"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							English
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="#">Amharic</a></li>
+							<li><a class="dropdown-item" href="#">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JavaScript Bundle with Popper -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
